@@ -1,0 +1,81 @@
+#input{
+    width: 20px;
+}
+.topnav{
+    display: flex;
+}
+.nav{
+    gap: 200px;
+}
+.con1{
+    display: flex;
+    font-size: larger;
+    
+}
+.img{
+    width: 400px;
+}
+.red{
+    color: red;
+}
+.icon{
+    width: 50px;
+}
+.con4{
+    padding-left:400px ;
+    width: 400px;
+
+}
+
+.con3{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btn{
+    color: rgb(223, 45, 45);
+    border: solid 1px red;
+    border-radius: 30px;
+    
+}
+.button{
+  border-radius: 30px;  
+  background-color: rgb(251, 33, 33);
+  padding: 6px 20px;
+}
+    
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .nav,.con1, .con2,.con4.icons, .topnav, .con3, .button, #input, #btn .red {
+        
+   flex-direction: column;
+    
+    }
+    .img{
+        width: 100px;
+        
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .icon{
+        width: 10px;
+    }
+    .con1{
+        flex-direction: column;
+       
+        
+    }
+    .con4{
+        width: 70px;
+
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+     .nav, .con2, .icons, .topnav, .con3, .button, #iput, #btn{
+        display: flex;
+        
+        }
+      
+
+}
