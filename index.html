@@ -7,27 +7,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="topnav">
+   <div class="navbar">
     <div>
-        <p><img src="hat.png" id="input">SKILLHERO</p>
+        <p><img src="/Photos/hat.png" id="input">SKILL<span class="red">HERO</span></p>
         
     </div>
-    <div class="nav">
-        <span class="red">Home</span>
-        <span>Program</span>
-        <span>About Us</span>
-        <span>Contact</span>
-    </div>
-    <div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+
+        <div>
+            <nav class="nav" >
+                 <ul >
+                <li ><a href="">Home</a></li>
+                <li><a href="">Program</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        <div class="buttons">
+        <div>
         <button id="btn">Login</button >
        </div>
+       <div>
        <button class="button">Join Now</button >
+       </div>
+    </div>
    </div> 
-   <div class="con1">
+   <div class="heading">
     <div>
-        <h2>Upgrade Your<br>Skills Up To<br> <span class="red">Superhero</span> Level</h2>
+        <h2>Upgrade Your<br>Skills Up To<br> <span class="red">Superhero</span> <br>Level</h2>
         <p>Don't let your strength be detected.<br>Explore the hidden skills witin you!</p>
-        <input type="text" placeholder="What sells are you looking for?"><button class="button">Explore Now</button>
+        
+           
+        <span id="form" ><input type="text" placeholder="What sells are you looking for?"></span>
+  
+    
+    <span id="explorebtn"><button class="button">Explore Now</button></span>
+
+
         <div>
             <p><img src="Photos/check-64.webp" id="input">Monthly Supscription </p>
             <p><img src="Photos/check-64.webp" id="input">30 days money back gurantee </p>
@@ -35,31 +58,30 @@
         </div>
        
     </div>
-    <div class="con4">
-       <img src="Photos/unnamed.png" class="img" > 
+    <div class="img">
+       <img src="Photos/man-1.png" class="img" > 
     </div>
 
    </div>
    <br>
    <br>
-   <div class="con3">
+   <div class="icons">
     <div>
-    <p></p><img src="Photos/765697.png" class="icon" > Miscrosoft </p>
+    <img src="Photos/microsoft.png.png" id="imgslack">
 </div>
 <div>
-    <img src="Photos/Google_2015_logo-256.webp"  class="icon">
+    <img src="Photos/google.png " id="google">
 </div>
 <div>
-    <p>Medium</p>
+    <img src="Photos/medium.png" id="imgslack">
 </div>
 <div>
-    <p>U Udemy</p>
+    <img src="Photos/udemy.png" id="imgslack">
 </div>
 <div>
-    <p> <img src="Photos/slack-logo-light-256.webp" class="icon">Slack </p>
+ <img src="Photos/slack.png" id="imgslack">
 </div>
-  
-   </div>
-   
+
+</div>
 </body>
 </html>

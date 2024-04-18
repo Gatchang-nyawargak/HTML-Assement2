@@ -1,81 +1,234 @@
 #input{
     width: 20px;
 }
-.topnav{
-    display: flex;
+body{
+    background-color:white;
+    margin-left: 5%;
 }
-.nav{
+.navbar{
+    display: flex;
     gap: 200px;
+    font-size: 20px;
+ 
 }
-.con1{
+
+nav{
+    flex: 1;
+    text-align: center;
+    margin-left: 100px;
+    gap: 100px;
+}
+ nav ul{
+   display: inline-block;
+   list-style-type: none;
+
+}
+ nav ul li{
+    display: inline-block;
+    margin-right: 20px;}
+    a{
+        text-decoration: none;
+        color: #0b0202;
+    }
+
+.heading{
     display: flex;
-    font-size: larger;
+    font-size: 30px;
+
+    
+}
+#picture{
+    width: 50px;
+}
+#imgslack{
+    width: 100px;
+}
+#explorebtn{
+    margin-left: -20%;
+
+}
+#form{
+    padding: 20px 20px 20px 20px;
+}
+#google{
+    width:60px ;
+    
     
 }
 .img{
-    width: 400px;
+    width: 700px;
+    height: 600px;
+    padding-left:200px ;
 }
 .red{
     color: red;
 }
 .icon{
-    width: 50px;
+    width: 70px;
 }
-.con4{
-    padding-left:400px ;
-    width: 400px;
-
-}
-
-.con3{
+.buttons{
     display: flex;
-    justify-content: space-evenly;
+    gap: 40px;
+    margin-top: 1%;
+}
+
+.icons{
+    display: flex;
+    width: 150px;
+    gap: 250px;
+    
+
+    
+}
+#menu-toggle{
+    display: none;
+}
+
+.form{
+    display: flex;
 }
 
 #btn{
     color: rgb(223, 45, 45);
     border: solid 1px red;
     border-radius: 30px;
+    padding: 5px 22px 5px 22px;
     
 }
 .button{
   border-radius: 30px;  
   background-color: rgb(251, 33, 33);
-  padding: 6px 20px;
+  padding: 5px 22px 5px 22px;
 }
     
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
-    .nav,.con1, .con2,.con4.icons, .topnav, .con3, .button, #input, #btn .red {
+@media only screen and (min-width: 280px) and (max-width:980px) {
+    .nav,.heading,#picture .icon,.buttons, .navbar, .icons, .button, #input, #btn .red .nav,.nav ul {
         
    flex-direction: column;
+   font-size: small;
     
-    }
-    .img{
-        width: 100px;
-        
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
+   }
+   .navbar{
+    gap: 10px ;
+    flex-direction: column;
+   }
+   #explorebtn{
+    size: 20px;
+   }
+   .nav{
+    flex-direction: row;
+   }
+    
     .icon{
-        width: 10px;
+        width: 30px;
     }
-    .con1{
-        flex-direction: column;
-       
+    .heading{
+        flex-wrap: wrap;
+        font-size: small;
+
+        }
+        .icons{
+            width: 40px;
+            gap: 30px;
+
+        }
+        .imgslack{
+            width: 80px;
+        }
+        .google{
+            width: 60px;
+        }
+
+        .img{
+            width: 60px;
+            height: 40px;
+            padding-left:0px ;
+        }
+
+        .hamburger-menu {
+            cursor: pointer;
+            display: inline-block;
+            position: absolute;
+            width: 20px;
+            height: 22px;
+            margin-left: 70%;
+        }
         
-    }
-    .con4{
-        width: 70px;
+        .hamburger-menu div {
+            background-color: #333;
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            left: 100%;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .hamburger-menu div:nth-child(1) {
+            margin-top: 35px;
+        }
+        
+        .hamburger-menu div:nth-child(2) {
+            margin-top: 40px;
+        }
+        
+        .hamburger-menu div:nth-child(3) {
+            margin-top: 45px;
+        }
 
-    }
-    
-}
+        .nav {
+            background-color: #fff;
+            width: 100%;
+            position: absolute;
+            top: 80%;
+            left: 0;
+            transform: scale(1, 0);
+            transform-origin: top;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav li {
+            padding: 10px 20px;
+        }
+        
+        .nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        .buttons button {
+            border: none;
+            cursor: pointer;
+            margin-bottom: 30px;
+            background-color: #fff;
+            width: 100%;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transform: scale(1, 0);
+            transform-origin: top;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .buttons button:hover {
+            background-color: #555;
+        }
+        .nav.open {
+            transform: scale(1, 1);
+        }
+        
+        
 
-@media only screen and (min-width: 1024px) {
-     .nav, .con2, .icons, .topnav, .con3, .button, #iput, #btn{
+@media only screen and  (max-width:120px){
+     .nav, .heading, .icons, .navbar, .icons, .button, #iput, #btn,.buttons{
         display: flex;
         
         }
       
 
+}
 }
