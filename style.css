@@ -73,6 +73,7 @@ nav{
 }
 
 .icons{
+    margin-top:5%;
     display: flex;
     width: 150px;
     gap: 250px;
